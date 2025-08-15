@@ -52,6 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				gold: 'hsl(var(--gold))',
+				silver: 'hsl(var(--silver))',
+				bronze: 'hsl(var(--bronze))',
+				champion: 'hsl(var(--champion))',
+				victory: 'hsl(var(--victory))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +72,17 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-gold': 'var(--gradient-gold)',
+				'gradient-champion': 'var(--gradient-champion)',
+				'gradient-victory': 'var(--gradient-victory)',
+			},
+			boxShadow: {
+				'champion': 'var(--shadow-champion)',
+				'gold': 'var(--shadow-gold)',
+				'card': 'var(--shadow-card)',
 			},
 			keyframes: {
 				'accordion-down': {

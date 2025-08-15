@@ -1,13 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import LiveResults from "@/components/LiveResults";
+import MedalTally from "@/components/MedalTally";
+import Schedule from "@/components/Schedule";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <main className="min-h-screen">
+      <Navigation />
+      <HeroSection />
+      <div id="results">
+        <LiveResults />
       </div>
-    </div>
+      <div id="medals">
+        <MedalTally />
+      </div>
+      <div id="schedule">
+        <Schedule />
+      </div>
+    </main>
   );
 };
 
